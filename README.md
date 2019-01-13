@@ -1,5 +1,10 @@
-# joybuy
+# joybuy.com flutter sample
 
-打开 IOS 模拟器
+This is a flutter case program developed by imitating Jingdong(京东) International Station.
 
-    open -a Simulator
+For environmental installation, please refer to the [flutter][1] .
+
+Open the IOS simulator
+open -a Simulator
+
+[1]: https://flutter.io/docs/get-started/install
