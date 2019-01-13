@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NavWidget extends StatefulWidget {
-  var itemData;
+  final itemData;
 
   NavWidget({Key key, @required this.itemData}) : super(key: key);
 

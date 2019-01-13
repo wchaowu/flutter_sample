@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 class SliderWidget extends StatefulWidget {
   SliderWidget({Key key, @required this.itemData}) : super(key: key);
-  var itemData;
+  final itemData;
   _SliderWidgetData createState() => _SliderWidgetData();
 }
 

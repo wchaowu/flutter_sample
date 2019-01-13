@@ -5,8 +5,8 @@ import 'package:joybuy.com/tools/Url.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class RecommendWidget extends StatefulWidget {
-  var itemData;
-  var titleData;
+  final itemData;
+  final titleData;
 
   RecommendWidget({Key key, @required this.titleData, @required this.itemData})
       : super(key: key);

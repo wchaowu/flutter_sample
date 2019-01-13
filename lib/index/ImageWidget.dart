@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class ImageWidget extends StatefulWidget {
-  var itemData;
+  final itemData;
 
   ImageWidget({Key key, @required this.itemData}) : super(key: key);
+
   _ImageState createState() => _ImageState();
 }
 

@@ -6,9 +6,9 @@ import 'dart:math';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class SupperDealsWidget extends StatefulWidget {
-  var itemData;
-  var titleData;
-  var moreData;
+  final itemData;
+  final titleData;
+  final moreData;
 
   SupperDealsWidget(
       {Key key,

@@ -3,8 +3,8 @@ import '../tools/Utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class TopShopWidget extends StatefulWidget {
-  var itemData;
-  var titleData;
+  final itemData;
+  final titleData;
 
   TopShopWidget({Key key, @required this.titleData, @required this.itemData})
       : super(key: key);

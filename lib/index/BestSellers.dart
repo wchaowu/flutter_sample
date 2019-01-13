@@ -6,9 +6,9 @@ import 'package:joybuy.com/tools/Url.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class BestSellersWidget extends StatefulWidget {
-  var itemData;
-  var titleData;
-  var moreData;
+  final itemData;
+  final titleData;
+  final moreData;
 
   BestSellersWidget(
       {Key key,
