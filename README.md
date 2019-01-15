@@ -6,7 +6,7 @@ For environmental installation, please refer to the [flutter][1] .
 
 This supports IOS and Android and runs on different devices
 The Widget involved in this case
-include Container, Row,Column,Stack,Scaffold,AppBar,ListTile,Divider,Expanded、TabBarView ……
+include Container, Row,Column,Stack,Scaffold,AppBar,ListTile,Divider,Expanded、TabBarView ……
 
 ## Open the IOS simulator
 
