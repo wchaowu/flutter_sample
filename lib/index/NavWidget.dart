@@ -11,28 +11,22 @@ class NavWidget extends StatefulWidget {
 class _NavState extends State<NavWidget> {
   List<Widget> getNavRow() {
     var datas = widget.itemData["items"];
-    List<Widget> list = new List();
-    for (int i = 0; i < datas.length; i++) {
-      var subItem = widget.itemData["items"][i];
+    return new List<Widget>.generate(datas.length, (int index) {
+      var subItem = widget.itemData["items"][index];
       Widget w = Container(
-
-          //  padding: EdgeInsets.all(22),
-          // width: double.maxFinite,
           child: Column(verticalDirection: VerticalDirection.up, children: [
         new Text(
           subItem["activityName"],
           style: TextStyle(fontSize: 10),
         )
       ]));
-      list.add(w);
-    }
-    return list;
+      return w;
+    });
   }
 
   @override
   Widget build(BuildContext content) {
     // return Text('detail---${widget.id}');
-    int length = widget.itemData['items'].length;
     return Container(
       //   color: Colors.white,
 

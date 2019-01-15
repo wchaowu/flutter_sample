@@ -42,10 +42,9 @@ class _ImageState extends State<ImageWidget> {
 
   List<Widget> getImageRow() {
     var datas = widget.itemData["items"];
-    List<Widget> list = new List();
-    for (int i = 0; i < datas.length; i++) {
+    return new List<Widget>.generate(datas.length, (int i) {
       var subItem = widget.itemData["items"][i];
-      Widget w = Expanded(
+      return Expanded(
           flex: 1,
           child: Container(
               padding: EdgeInsets.all(2),
@@ -55,9 +54,7 @@ class _ImageState extends State<ImageWidget> {
                 fit: BoxFit.cover,
                 imageUrl: subItem["activityImage"],
               )));
-      list.add(w);
-    }
-    return list;
+    });
   }
 
   Container getDoubleImage() {

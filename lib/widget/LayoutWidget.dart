@@ -44,13 +44,12 @@ class LayoutState extends State<LayoutWidget> {
   @override
   Widget build(BuildContext context) {
     _initCount();
-    var totalCount = _getListCount();
+    int totalCount = _getListCount();
     //  当数量比较少的情况采用非回收的方式
     if (totalCount < 10) {
-      List<Widget> list = new List();
-      for (int i = 0; i < totalCount; i++) {
-        list.add(buildItemWidget(context, i));
-      }
+      List<Widget> list = new List<Widget>.generate(totalCount, (int i) {
+        return buildItemWidget(context, i);
+      });
       return Container(
           child: new ListView(
         children: list,

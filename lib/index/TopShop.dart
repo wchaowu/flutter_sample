@@ -14,8 +14,7 @@ class TopShopWidget extends StatefulWidget {
 class _TopShopState extends State<TopShopWidget> {
   List<Widget> _getProductList() {
     var skus = widget.itemData["skus"];
-    List<Widget> list = List();
-    for (var i = 0; i < skus.length; i++) {
+    return List<Widget>.generate(skus.length, (int i) {
       var subItem = skus[i];
       Widget widget = Expanded(
           child: Container(
@@ -34,10 +33,8 @@ class _TopShopState extends State<TopShopWidget> {
                     style: new TextStyle(fontSize: 12, color: Colors.red),
                     textAlign: TextAlign.center),
               ])));
-
-      list.add(widget);
-    }
-    return list;
+      return widget;
+    });
   }
 
   @override
