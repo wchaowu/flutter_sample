@@ -47,8 +47,8 @@ class _MyhomeState extends State<Myhome> {
             padding: EdgeInsets.all(0),
             children: <Widget>[
               UserAccountsDrawerHeader(
-                accountName: Text("luowei"),
-                accountEmail: Text("luowei@jd.com"),
+                accountName: Text("****"),
+                accountEmail: Text("***@**.com"),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(
                       'https://static.joybuy.com/ept_m/res/en/launcher-144.png'),
